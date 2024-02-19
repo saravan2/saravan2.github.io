@@ -11,7 +11,7 @@ redirect_from:
 I go by "Saravana". 
 
 
-I am a software engineer with over 10 years of experience building systems software. 
+I am a software engineer with over a decade of experience building systems software. 
 
 
 I love to learn, research and expand my horizons on a variety of topics. 
