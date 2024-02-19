@@ -38,6 +38,9 @@
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
+      {% if author.resume %}
+      <li><a href="{{ author.resume }}"><i class="fas fa-fw fa-graduation-cap"></i> Resume / CV </a></li>
+      {% endif %} 
       {% if author.arxiv %}
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw"></i> arXiv</a></li>
       {% endif %}      
