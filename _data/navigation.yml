@@ -3,6 +3,9 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Resume / CV"
+    url: /files/Resume-website.pdf
+
 #  - title: "Talks"
 #    url: /talks/    
 
@@ -14,9 +17,6 @@ main:
         
 #  - title: "Blog Posts"
 #    url: /year-archive/
-    
-#  - title: "Resume"
-#    url: /files/Resume-website.pdf
     
 #  - title: "Guide"
 #    url: /markdown/

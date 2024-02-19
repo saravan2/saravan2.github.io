@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Generalist Software Engineer"
   location         : "Menlo Park, California"
-  employer         : "Meta Platforms, Inc."
+  employer         : # ""
   uri              : # URL
   email            : "saravananinca@gmail.com" 
 
@@ -34,7 +34,7 @@ author:
   # Academic websites
   resume           : "files/Resume-website.pdf" # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=m3vWV-EAAAAJ&hl=en"
   impactstory      : # URL
   orcid            : "http://orcid.org/0009-0007-7285-1946"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
