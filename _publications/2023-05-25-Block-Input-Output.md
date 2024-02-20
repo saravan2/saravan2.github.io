@@ -1,7 +1,7 @@
 ---
 title: "IOCost: Block Input-Output Control for Containers in Datacenter"
 collection: publications
-permalink: /publication/2023-05-25-Block-Input-Output
+permalink: /publication/2023-05-25-Block-Input-Output.html
 excerpt: 'IEEE Micro Top Pick from all of the computer architecture conference papers of 2022'
 date: 2023-05-25
 venue: 'IEEE Micro (Volume: 43, Issue: 4, July-Aug. 2023)'
