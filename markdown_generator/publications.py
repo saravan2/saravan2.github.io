@@ -83,6 +83,9 @@ for row, item in publications.iterrows():
     
     md += "\nvenue: '" + html_escape(item.venue) + "'"
     
+    if len(str(item.slides_url)) > 5:
+        md += "\nslidesurl: '" + item.slides_url + "'"
+
     if len(str(item.paper_url)) > 5:
         md += "\npaperurl: '" + item.paper_url + "'"
     
@@ -92,6 +95,9 @@ for row, item in publications.iterrows():
     
     ## Markdown description for individual page
     
+    if len(str(item.slides_url)) > 5:
+        md += "\n\n<a href='" + item.slides_url + "'>Slides</a>\n" 
+        
     if len(str(item.paper_url)) > 5:
         md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>\n" 
         
