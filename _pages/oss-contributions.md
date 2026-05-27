@@ -41,3 +41,15 @@ Miscellaneous
 ### 5) IOCost CI
 Miscellaneous  
 [https://github.com/iocost-benchmark/iocost-benchmarks-ci/commits?author=saravan2](https://github.com/iocost-benchmark/iocost-benchmarks-ci/commits?author=saravan2)
+
+### 6) cloud-Hypervisor
+Member of cloud-hypervisor open source project. Primarly upstream features required for virtualized GPU workloads  
+[https://github.com/cloud-hypervisor/cloud-hypervisor/commits?author=saravan2](https://github.com/cloud-hypervisor/cloud-hypervisor/commits?author=saravan2)
+
+### 7) cloud-hypervisor/edk2
+Maintainer of Cloud-Hypervisor edk2 firmware fork  
+[https://github.com/cloud-hypervisor/edk2/commits?author=saravan2](https://github.com/cloud-hypervisor/edk2/commits?author=saravan2)
+
+###  8) rust-vmm/vfio
+Miscellaneous  
+[https://github.com/rust-vmm/vfio/commits?author=saravan2](https://github.com/rust-vmm/vfio/commits?author=saravan2)
