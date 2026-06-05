@@ -25,12 +25,15 @@ Maintainer of the cloud-hypervisor's edk2 firmware fork.
 
 ### 6) Resctl-demo Patches
 - [\[IO info\] Add firmware](https://github.com/facebookexperimental/resctl-demo/commit/0ddb3b89d56c1649860e6d7fa555ab4ec44b8d5e)
-- [bench: Adding versio information to result header](https://github.com/facebookexperimental/resctl-demo/commit/d7e54a64137b43259b065209eda4d2243cbb1fb4)
+- [bench: Adding version information to result header](https://github.com/facebookexperimental/resctl-demo/commit/d7e54a64137b43259b065209eda4d2243cbb1fb4)
 - [bench: Formatted code](https://github.com/facebookexperimental/resctl-demo/commit/6453dd9e4de6ee42cc50f54b11473931e7dd1677)
-- [Commits](https://github.com/facebookexperimental/resctl-demo/commits?author=saravan2)
+- [Revert ioengine to libaio](https://github.com/facebookexperimental/resctl-demo/commits?author=saravan2)
 
-### 7) IOCost Benchmarks
+### 7) chef/ohai
+- [mdadm: Record array UUID](https://github.com/chef/ohai/commit/cbc8437f9f8e1b7a60af061dc68882185b5e20b3)
+
+### 8) IOCost Benchmarks
 - [Commits](https://github.com/iocost-benchmark/iocost-benchmarks/commits?author=saravan2)
 
-### 8) IOCost CI
+### 9) IOCost CI
 - [Commits](https://github.com/iocost-benchmark/iocost-benchmarks-ci/commits?author=saravan2)
