@@ -21,11 +21,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Zola
+        run: |
+          curl -sL https://github.com/getzola/zola/releases/download/v0.22.0/zola-v0.22.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          sudo mv zola /usr/local/bin/
+
       - name: Build with Zola
         # base_url comes from config.toml (https://saravanand.com); outputs to ./public
-        uses: getzola/zola@v0.22.0
-        with:
-          args: build
+        run: zola build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4

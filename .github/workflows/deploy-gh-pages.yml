@@ -23,12 +23,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Zola
+        run: |
+          curl -sL https://github.com/getzola/zola/releases/download/v0.22.0/zola-v0.22.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          sudo mv zola /usr/local/bin/
+
       - name: Build with Zola
         # Override base_url so canonical links / sitemap point at the .github.io host
         # (config.toml's base_url is for saravanand.com).
-        uses: getzola/zola@v0.22.0
-        with:
-          args: build --base-url https://saravan2.github.io
+        run: zola build --base-url https://saravan2.github.io
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
