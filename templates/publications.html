@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }} &middot; {{ config.title }}{% endblock %}
+{% block content %}
+  <h1>{{ section.title }}</h1>
+  <p class="prose">You can also find my articles on my
+    <a href="{{ config.extra.orcid | safe }}">ORCID profile</a> and on my
+    <a href="{{ config.extra.googlescholar | safe }}">Google Scholar profile</a>.</p>
+
+  {# sort_by = "date" already orders section.pages newest-first. #}
+  <ul class="pub-list">
+    {% for pub in section.pages %}
+    <li class="pub">
+      <h3 class="pub__title"><a href="{{ pub.permalink | safe }}">{{ pub.title }}</a></h3>
+      {% if pub.extra.venue %}<p class="pub__venue">{{ pub.extra.venue }}</p>{% endif %}
+      {% if pub.extra.excerpt %}<p class="pub__excerpt">{{ pub.extra.excerpt }}</p>{% endif %}
+      <p class="pub__links">
+        {% if pub.extra.paperurl %}<a href="{{ pub.extra.paperurl | safe }}">Paper</a>{% endif %}
+        {% if pub.extra.slidesurl %}<a href="{{ pub.extra.slidesurl | safe }}">Slides</a>{% endif %}
+        <a href="{{ pub.permalink | safe }}">Details</a>
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

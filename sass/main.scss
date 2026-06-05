@@ -1,0 +1,150 @@
+// Minimal, hand-rolled styles for saravanand.com
+// Two-column layout: fixed-width author sidebar + content. Stacks on mobile.
+
+// ---- Tokens ----
+$ink:        #1a1a1a;
+$muted:      #5b6168;
+$accent:     #2563eb;
+$border:     #e5e7eb;
+$bg:         #ffffff;
+$bg-soft:    #f7f8fa;
+$max-width:  1080px;
+$sidebar-w:  280px;
+
+// ---- Reset-ish ----
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: $ink;
+  background: $bg;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+h1, h2, h3 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 1.9rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2rem 0 .75rem; }
+h3 { font-size: 1.1rem; margin: 1.5rem 0 .5rem; }
+
+// ---- Layout ----
+.layout {
+  display: flex;
+  gap: 3rem;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+// ---- Sidebar ----
+.sidebar {
+  width: $sidebar-w;
+  flex-shrink: 0;
+  text-align: center;
+  position: sticky;
+  top: 3rem;
+  align-self: flex-start;
+
+  &__avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid $border;
+  }
+  &__name {
+    font-size: 1.4rem;
+    margin: 1rem 0 .25rem;
+    a { color: inherit; text-decoration: none; }
+  }
+  &__bio  { color: $muted; margin: 0 0 1.25rem; }
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+
+    li { margin: .4rem 0; color: $muted; }
+    i { color: $muted; margin-right: .5rem; width: 1.1em; text-align: center; }
+  }
+}
+
+// ---- Nav ----
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid $border;
+  font-weight: 550;
+}
+
+// ---- Prose ----
+.prose {
+  p { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+}
+
+// ---- Publications list ----
+.pub-list { list-style: none; margin: 0; padding: 0; }
+.pub {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid $border;
+  &:last-child { border-bottom: 0; }
+
+  &__title  { margin: 0 0 .25rem; }
+  &__venue  { color: $muted; font-style: italic; margin: .15rem 0; }
+  &__excerpt { margin: .35rem 0; }
+  &__date   { color: $muted; margin: .15rem 0 1rem; }
+  &__links a { margin-right: 1rem; font-size: .95rem; }
+}
+
+.pub-detail .back { font-size: .95rem; margin-bottom: .5rem; }
+.citation {
+  background: $bg-soft;
+  border-left: 3px solid $border;
+  margin: 0;
+  padding: .75rem 1rem;
+  color: $muted;
+  font-size: .95rem;
+}
+
+// ---- Footer ----
+.footer {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  color: $muted;
+  font-size: .85rem;
+  border-top: 1px solid $border;
+}
+
+// ---- Responsive ----
+@media (max-width: 760px) {
+  .layout {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1.25rem;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+  }
+  .sidebar__links { text-align: center; }
+}

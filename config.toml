@@ -1,0 +1,34 @@
+# Zola configuration — https://www.getzola.org/documentation/getting-started/configuration/
+# NOTE: base_url is overridden per-deploy:
+#   - saravanand.com (S3)        -> built with this file as-is
+#   - saravan2.github.io (Pages) -> built with --base-url https://saravan2.github.io
+base_url = "https://saravanand.com"
+title = "Saravanan D"
+description = "Personal website of Saravanan D, a generalist software engineer."
+
+compile_sass = true
+generate_feeds = false
+build_search_index = false
+
+taxonomies = []
+
+# Everything the sidebar / templates read lives under [extra].
+[extra]
+name = "Saravanan D"
+bio = "Generalist Software Engineer"
+location = "Palo Alto, California"
+avatar = "/images/profile.png"
+email = "saravananinca@gmail.com"
+resume = "/files/Resume-website.pdf"
+googlescholar = "https://scholar.google.com/citations?user=m3vWV-EAAAAJ&hl=en"
+orcid = "http://orcid.org/0009-0007-7285-1946"
+github = "saravan2"
+linkedin = "saravananinca"
+
+# Top navigation
+nav = [
+  { name = "Home", url = "/" },
+  { name = "Publications", url = "/publications/" },
+  { name = "Open Source Contributions", url = "/oss-contributions/" },
+  { name = "Resume / CV", url = "/files/Resume-website.pdf" },
+]

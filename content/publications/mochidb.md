@@ -1,0 +1,16 @@
++++
+title = "MochiDB: A Byzantine Fault Tolerant Datastore"
+date = 2017-12-11
+aliases = ["/publication/2017-12-11-MochiDB.html"]
+
+[extra]
+venue = "CS244b: Distributed Systems, Autumn 2017, Stanford University"
+paperurl = "https://www.scs.stanford.edu/17au-cs244b/labs/projects/tsaturyan_dhakshinamurthy.pdf"
+citation = "Tsaturyan, T., & Dhakshinamurthy, S. MochiDB: A Byzantine Fault Tolerant Datastore"
++++
+
+In this paper we would like to present MochiDB - a consistent, high volume, distributed datastore which is
+Byzantine fault tolerant. MochiDB supports native transactions and uses BFT quorum protocol with random
+write seeds that requires only two round trips for writes and one for read which gives it low latency over WAN
+deployments. This paper puts focus on engineering solutions that minimize the cost of contention resolution,
+sharding, dynamic configuration changes, garbage collection and others.
