@@ -16,21 +16,21 @@ template = "page.html"
 - [\[IO info\] Add firmware](https://github.com/facebookexperimental/resctl-demo/commit/0ddb3b89d56c1649860e6d7fa555ab4ec44b8d5e)
 - [bench: Adding versio information to result header](https://github.com/facebookexperimental/resctl-demo/commit/d7e54a64137b43259b065209eda4d2243cbb1fb4)
 - [bench: Formatted code](https://github.com/facebookexperimental/resctl-demo/commit/6453dd9e4de6ee42cc50f54b11473931e7dd1677)
-- [Miscellaneous commits](https://github.com/facebookexperimental/resctl-demo/commits?author=saravan2)
+- [Commits](https://github.com/facebookexperimental/resctl-demo/commits?author=saravan2)
 
 ### 4) IOCost Benchmarks
-- [Miscellaneous commits](https://github.com/iocost-benchmark/iocost-benchmarks/commits?author=saravan2)
+- [Commits](https://github.com/iocost-benchmark/iocost-benchmarks/commits?author=saravan2)
 
 ### 5) IOCost CI
-- [Miscellaneous commits](https://github.com/iocost-benchmark/iocost-benchmarks-ci/commits?author=saravan2)
+- [Commits](https://github.com/iocost-benchmark/iocost-benchmarks-ci/commits?author=saravan2)
 
 ### 6) cloud-Hypervisor
 Member of the cloud-hypervisor open source project. Primarily upstream features required for virtualized GPU workloads.
-- [Commits by author](https://github.com/cloud-hypervisor/cloud-hypervisor/commits?author=saravan2)
+- [Commits](https://github.com/cloud-hypervisor/cloud-hypervisor/commits?author=saravan2)
 
 ### 7) cloud-hypervisor/edk2
 Maintainer of the Cloud-Hypervisor edk2 firmware fork.
-- [Commits by author](https://github.com/cloud-hypervisor/edk2/commits?author=saravan2)
+- [Commits](https://github.com/cloud-hypervisor/edk2/commits?author=saravan2)
 
 ### 8) rust-vmm/vfio
-- [Miscellaneous commits](https://github.com/rust-vmm/vfio/commits?author=saravan2)
+- [Commits](https://github.com/rust-vmm/vfio/commits?author=saravan2)
