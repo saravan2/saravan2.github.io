@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} &middot; {{ config.title }}{% endblock %}
+{% block content %}
+  <article class="pub-detail">
+    <p class="back"><a href="/publications/">&larr; All publications</a></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.extra.venue %}<p class="pub__venue">{{ page.extra.venue }}</p>{% endif %}
+    {% if page.date %}<p class="pub__date">{{ page.date | date(format="%B %-d, %Y") }}</p>{% endif %}
+
+    <p class="pub__links">
+      {% if page.extra.paperurl %}<a href="{{ page.extra.paperurl | safe }}">Paper</a>{% endif %}
+      {% if page.extra.slidesurl %}<a href="{{ page.extra.slidesurl | safe }}">Slides</a>{% endif %}
+    </p>
+
+    <div class="prose">{{ page.content | safe }}</div>
+
+    {% if page.extra.citation %}
+    <h2>Recommended citation</h2>
+    <blockquote class="citation">{{ page.extra.citation }}</blockquote>
+    {% endif %}
+  </article>
+{% endblock %}

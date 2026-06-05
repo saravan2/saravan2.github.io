@@ -1,0 +1,29 @@
+{# Author profile sidebar — rendered once, shown on every page. #}
+{% macro author() %}
+<aside class="sidebar">
+  <a href="/"><img class="sidebar__avatar" src="{{ config.extra.avatar | safe }}" alt="{{ config.extra.name }}"></a>
+  <h1 class="sidebar__name"><a href="/">{{ config.extra.name }}</a></h1>
+  <p class="sidebar__bio">{{ config.extra.bio }}</p>
+  <ul class="sidebar__links">
+    <li><i class="fa-solid fa-location-dot fa-fw"></i> {{ config.extra.location }}</li>
+    {% if config.extra.email %}
+    <li><a href="mailto:{{ config.extra.email }}"><i class="fa-solid fa-envelope fa-fw"></i> Email</a></li>
+    {% endif %}
+    {% if config.extra.resume %}
+    <li><a href="{{ config.extra.resume | safe }}"><i class="fa-solid fa-graduation-cap fa-fw"></i> Resume / CV</a></li>
+    {% endif %}
+    {% if config.extra.googlescholar %}
+    <li><a href="{{ config.extra.googlescholar | safe }}"><i class="fa-solid fa-graduation-cap fa-fw"></i> Google Scholar</a></li>
+    {% endif %}
+    {% if config.extra.orcid %}
+    <li><a href="{{ config.extra.orcid | safe }}"><i class="ai ai-orcid ai-fw"></i> ORCID</a></li>
+    {% endif %}
+    {% if config.extra.github %}
+    <li><a href="https://github.com/{{ config.extra.github }}"><i class="fa-brands fa-github fa-fw"></i> GitHub</a></li>
+    {% endif %}
+    {% if config.extra.linkedin %}
+    <li><a href="https://www.linkedin.com/in/{{ config.extra.linkedin }}"><i class="fa-brands fa-linkedin fa-fw"></i> LinkedIn</a></li>
+    {% endif %}
+  </ul>
+</aside>
+{% endmacro %}
